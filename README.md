@@ -43,7 +43,7 @@ bash
 🚀 Instalação
 Baixe o script:
 ```bash
-wget https://raw.githubusercontent.com/seu-usuario/gravador-audio-linux/main/gravar_audio.sh
+wget https://raw.githubusercontent.com/seu-usuario/gravador-audio-linux/main/gravar-audio-ffmpeg.sh
 ```
 
 Torne-o executável:
