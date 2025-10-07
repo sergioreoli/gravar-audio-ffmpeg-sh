@@ -42,11 +42,12 @@ bash
 
 🚀 Instalação
 Baixe o script:
+```bash
 1
 wget https://raw.githubusercontent.com/seu-usuario/gravador-audio-linux/main/gravar_audio.sh
 Torne-o executável:
 
-
+```
 1
 chmod +x gravar_audio.sh
 🔁 Substitua seu-usuario pelo seu nome de usuário no GitHub. 
