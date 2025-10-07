@@ -50,7 +50,7 @@ Torne-o executável:
 
 ```bash
 1
-chmod +x gravar_audio.sh
+chmod +x gravar-audio-ffmpeg.sh
 ```
 
 🔁 Substitua seu-usuario pelo seu nome de usuário no GitHub. 
@@ -59,7 +59,7 @@ chmod +x gravar_audio.sh
 Execute o script:
 
 ```bash
-./gravar_audio.sh
+./gravar-audio-ffmpeg.sh
 ```
 
 Passo a passo:
