@@ -43,22 +43,24 @@ bash
 🚀 Instalação
 Baixe o script:
 ```bash
-1
 wget https://raw.githubusercontent.com/seu-usuario/gravador-audio-linux/main/gravar_audio.sh
+```
+
 Torne-o executável:
 
-```
+```bash
 1
 chmod +x gravar_audio.sh
+```
+
 🔁 Substitua seu-usuario pelo seu nome de usuário no GitHub. 
 
 ▶️ Uso
 Execute o script:
 
-bash
-
-1
+```bash
 ./gravar_audio.sh
+```
 
 Passo a passo:
 O script lista todos os monitores de áudio disponíveis (ex: alsa_output.pci-0000_00_1b.0.analog-stereo.monitor)
@@ -87,10 +89,10 @@ Evite fechar o terminal bruscamente — isso pode deixar o arquivo inutilizável
 ❌ "Nenhum monitor de áudio encontrado"
 Verifique se o áudio está funcionando normalmente.
 Execute manualmente:
-bash
 
-1
+```bash
 pactl list short sources
+```
 
 Procure por entradas com .monitor no nome. Se não houver, seu sistema pode não estar configurado para loopback.
 Dica: Em alguns ambientes (como WSL ou containers), o monitor de áudio não está disponível. 
@@ -98,11 +100,10 @@ Dica: Em alguns ambientes (como WSL ou containers), o monitor de áudio não est
 ❌ "Falha ao iniciar a gravação"
 Verifique se outro programa está usando exclusivamente o dispositivo de áudio.
 Certifique-se de que o ffmpeg foi compilado com suporte a pulse:
-bash
 
-
-1
+```bash
 ffmpeg -formats 2>/dev/null | grep -i pulse
+```
 
 ❌ Arquivo vazio ou corrompido
 Isso geralmente acontece se o processo for morto com SIGKILL (ex: kill -9).
@@ -111,9 +112,9 @@ Sempre use Ctrl+C para parar — o script trata isso corretamente.
 📄 Licença
 Este projeto está licenciado sob a MIT License.
 
-MIT License
+```bash
 
-Copyright (c) 2025 Seu Nome
+MIT License
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -132,27 +133,8 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-MIT License
 
-Copyright (c) 2025 Seu Nome
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+```
 
 🙌 Contribuições
 Sugestões, correções e melhorias são bem-vindas! Abra uma issue ou envie um pull request.
